@@ -58,7 +58,7 @@ namespace phonetic{
 
                             //switch letters cases //
                         else if(((temp_Ch == 'v' && s2_Ch == 'w') || (temp_Ch == 'w' && s2_Ch == 'v'))){
-                            if(temp_ind-1 == temp.size()){
+                            if(temp_ind+1 == temp.size()){
                                 return temp;
                                 i=s1.size();
                             }
