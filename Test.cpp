@@ -79,7 +79,7 @@ TEST_CASE("Test replacement of c and k") {
     CHECK(find(text, "cokktail") == string("cocktail"));
     CHECK(find(text, "cokctail") == string("cocktail"));
     CHECK(find(text, "kocktail") == string("cocktail"));
-    CHECK(find(text, "kokcail") == string("cocktail"));
+    CHECK(find(text, "kokctail") == string("cocktail"));
     CHECK(find(text, "kokktail") == string("cocktail"));
     CHECK(find(text, "cocctail") == string("cocktail"));
 }
@@ -117,7 +117,7 @@ TEST_CASE("Test replacement of s and z") {
     CHECK(find(text, "ziszerz") == string("sizzers"));
     CHECK(find(text, "sisserz") == string("sizzers"));
     CHECK(find(text, "zizzerz") == string("sizzers"));
-    CHECK(find(text, "sissrs") == string("sizzers"));
+    CHECK(find(text, "sissers") == string("sizzers"));
 }
 
 TEST_CASE("Test replacement of d and t") {
@@ -155,10 +155,9 @@ TEST_CASE("Test replacement of o and u") {
 TEST_CASE("Test replacement of i and y") {
     string text = "xxx illy yyy";
     CHECK(find(text, "illy") == string("illy"));
-    CHECK(find(text, "iily") == string("illy"));
-    CHECK(find(text, "iliy") == string("illy"));
-    CHECK(find(text, "iiiy") == string("illy"));
-    CHECK(find(text, "llly") == string("illy"));
+    CHECK(find(text, "illi") == string("illy"));
+    CHECK(find(text, "ylly") == string("illy"));
+    CHECK(find(text, "ylli") == string("illy"));
 }
 
 TEST_CASE("Test replacement of lower-case and upper-case") {
