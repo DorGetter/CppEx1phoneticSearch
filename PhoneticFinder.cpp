@@ -1,8 +1,17 @@
 #include "PhoneticFinder.hpp"
 #include <iostream>
 #include <string>
-
+#include <exception>
 using namespace std;
+
+struct Mexception : std::exception {
+        const char* what() const throw() {
+            const char* Exc = "Word Not Found";
+            return Exc;
+            }
+    };
+
+
 namespace phonetic{
 
 
@@ -11,11 +20,11 @@ namespace phonetic{
         char space = ' ';
         string temp = "";
         int tet = s1.size();
-        for(unsigned int i=0 ; i < s1.size(); i++) {
+        for(unsigned int i=0 ; i < s1.size()+1; i++) {
 
             // End of a word //
             // Checking if this is the word we need to find : //
-            if (s1[i] == space ){
+            if (s1[i] == space || i==s1.size() ){
 
                 //first check: has to be same size (Number of characters) //
                 if(temp.size() == s2.size()){
@@ -164,7 +173,8 @@ namespace phonetic{
             }
         }
 
-    return "";
+    if(temp=="") throw Mexception();
+    return ""; 
 
     }
 }
