@@ -14,12 +14,15 @@ struct Mexception : std::exception {
 
 namespace phonetic{
 
-
+/**
+ * @param  s1 -> text to search in.
+ * @param  s2 -> word to
+ * @return The word found in the text.
+ */
     string find(string s1, string s2){
 
-        char space = ' ';
-        string temp = "";
-        int tet = s1.size();
+        char space = ' ';        string temp = "";        int tet = s1.size();
+
         for(unsigned int i=0 ; i < s1.size()+1; i++) {
 
             // End of a word //
@@ -29,14 +32,14 @@ namespace phonetic{
                 //first check: has to be same size (Number of characters) //
                 if(temp.size() == s2.size()){
 
-                    // iterate indexes  //
+                     ///// iterate indexes  //////
                     unsigned int temp_ind=0;
                     unsigned int s2_ind=0;
                     int te=temp.size();
 
                     while(temp_ind != temp.size()){
 
-                        //saving the char in temps //
+                        ///// saving the char in temps /////
                         char temp_Ch= temp[temp_ind];
                         char s2_Ch= s2[s2_ind];
 
@@ -56,7 +59,8 @@ namespace phonetic{
                             }
                         }
 
-                            //switch letters cases //
+                            ///////////////// switch letters cases ///////////////////
+
                         else if(((temp_Ch == 'v' && s2_Ch == 'w') || (temp_Ch == 'w' && s2_Ch == 'v'))){
                             if(temp_ind+1 == temp.size()){
                                 return temp;
@@ -166,7 +170,7 @@ namespace phonetic{
                     temp = "";
                 }
             }
-                // building the word --> append char to temp //
+                ////// building the word --> append char to temp //////
             else {
                 char c = s1[i];
                 temp.push_back(c);

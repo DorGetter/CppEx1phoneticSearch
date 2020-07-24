@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dor/Desktop/task1_phoneticSearch /phonetic_serach/Demo.cpp
+PhoneticFinder.hpp
+/home/dor/Desktop/task1_phoneticSearch /phonetic_serach/PhoneticFinder.hpp
+iostream
+-
+stdexcept
+-
+
+/home/dor/Desktop/task1_phoneticSearch /phonetic_serach/PhoneticFinder.cpp
+PhoneticFinder.hpp
+/home/dor/Desktop/task1_phoneticSearch /phonetic_serach/PhoneticFinder.hpp
+iostream
+-
+string
+-
+exception
+-
+
+/home/dor/Desktop/task1_phoneticSearch /phonetic_serach/PhoneticFinder.hpp
+iostream
+-
+stdexcept
+-
+string
+-
+

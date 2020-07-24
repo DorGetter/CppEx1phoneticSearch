@@ -14,9 +14,6 @@ using namespace phonetic;
 #include <string>
 using namespace std;
 
-
-
-
 TEST_CASE("Test replacement of v and w") {
     string text = "xxx volvo yyy";
     CHECK(find(text, "volvo") == string("volvo"));

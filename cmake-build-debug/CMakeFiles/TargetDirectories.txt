@@ -1,0 +1,3 @@
+/home/dor/Desktop/task1_phoneticSearch /phonetic_serach/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dor/Desktop/task1_phoneticSearch /phonetic_serach/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dor/Desktop/task1_phoneticSearch /phonetic_serach/cmake-build-debug/CMakeFiles/phonetic_serach.dir

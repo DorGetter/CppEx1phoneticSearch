@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/phonetic_serach.dir/Demo.cpp.o CMakeFiles/phonetic_serach.dir/PhoneticFinder.cpp.o  -o phonetic_serach 
